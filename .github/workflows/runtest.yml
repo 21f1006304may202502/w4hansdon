@@ -14,7 +14,7 @@ jobs:
           python-version: "3.9"
       - uses: iterative/setup-cml@v2
       - name: run unit tests
-        run:
+        run: |
           pip install -r requirements.txt
           python3 -m test 2>&1 > test_output.txt
       - name: Create CML report
